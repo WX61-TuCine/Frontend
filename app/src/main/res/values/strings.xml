@@ -24,4 +24,9 @@
     <string name="number_of_seats">1</string>
 
     <string name="text_button_pay">Pagar</string>
+    <string name="direccion_cine">direccionCine</string>
+    <string name="descripcion_cine">descripcion_cine</string>
+    <string name="nombre_cine">nombre_cine</string>
+    <string name="imgcine">imgcine</string>
+    <string name="cdReturn">cdReturn</string>
 </resources>

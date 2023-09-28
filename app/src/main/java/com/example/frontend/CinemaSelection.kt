@@ -28,9 +28,6 @@ class CinemaSelection : AppCompatActivity() {
     private fun loadPeliculas() {
         peliculas.add(Pelicula("Todo en todas partes al mismo tiempo", "C1, C2, C3"))
         peliculas.add(Pelicula("El gato con botas", "C1, C2, C3"))
-        peliculas.add(Pelicula("Todo en todas partes al mismo tiempo", "C1, C2, C3"))
-        peliculas.add(Pelicula("El gato con botas", "C1, C2, C3"))
-        peliculas.add(Pelicula("Todo en todas partes al mismo tiempo", "C1, C2, C3"))
-        peliculas.add(Pelicula("El gato con botas", "C1, C2, C3"))
+        peliculas.add(Pelicula("Sound of Freedom", "C1, C2, C3"))
     }
 }
