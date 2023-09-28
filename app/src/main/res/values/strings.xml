@@ -14,14 +14,15 @@
     </string-array>
 
     <string name="text_header">Escoger horario</string>
-
     <string name="cinema_name">AutoCinema LimaPark</string>
-
     <string name="cinema_location">San Miguel 15088</string>
-
     <string name="text_2">Cantidad de Asientos</string>
-
     <string name="number_of_seats">1</string>
-
     <string name="text_button_pay">Pagar</string>
+
+    <string name="text_header_select">Sección de cineclub</string>
+    <string name="movie_name">El gato con botas el último deseo</string>
+    <string name="about_movie">Acción y Aventura</string>
+    <string name="movie_staff">Antonio Banderas, Salma Hayek, Harvey Guillén</string>
+    <string name="cineclub_name">LIMA PARK</string>
 </resources>
