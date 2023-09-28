@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TuCineApp</string>
+    <string name="text_watch_movie">¡Veamos una película juntos!</string>
+    <string name="textSearchView">Busca películas, cineclubs...</string>
+    <string name="en_cartelera">En Cartelera</string>
+    <string name="ver_todos">Ver todos</string>
+    <string name="cineclubs">Cineclubs</string>
+</resources>
