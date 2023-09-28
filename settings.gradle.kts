@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Frontend"
+rootProject.name = "TuCineApp"
 include(":app")
  

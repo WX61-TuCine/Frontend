@@ -4,15 +4,202 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:tooltipText="AAA"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_circle_notifications" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="216dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWatchMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/text_watch_movie"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:srcCompat="@drawable/perfil" />
+
+    <!--Frame Layout con borde redondos -->
+
+    <FrameLayout
+        android:layout_width="322dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="26dp"
+        android:background="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCineclubs"
+        app:layout_constraintVertical_bias="0.24">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivPerfilCineClub"
+            android:layout_width="78dp"
+            android:layout_height="67dp"
+            android:layout_margin="10dp"
+            app:shapeAppearanceOverlay="@style/roundedImagePerfilCineClub"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvCineClubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLocationCineClubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="35dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="38dp"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_next" />
+    </FrameLayout>
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        android:layout_width="406dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="184dp"
+        app:autoPlay="true"
+        app:autoPlayDelay="3000"
+        app:captionMargin="0dp"
+        app:carouselType="SHOWCASE"
+        app:imageScaleType="fitCenter"
+        app:infiniteCarousel="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showCaption="true"
+        app:showNavigationButtons="false"
+        app:touchToPause="true" />
+
+    <SearchView
+        android:id="@+id/svSearch"
+        android:layout_width="356dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:iconifiedByDefault="false"
+        android:padding="4dp"
+        android:autofillHints="@string/textSearchView"
+        android:elevation="10dp"
+        android:queryHint="@string/textSearchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPerfil" />
+
+    <TextView
+        android:id="@+id/tvEnCartelera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/en_cartelera"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svSearch" />
+
+    <TextView
+        android:id="@+id/tvSeeAllCineClubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/ver_todos"
+        android:textColor="#FF9800"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+    <TextView
+        android:id="@+id/tvCineclubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cineclubs"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+    <TextView
+        android:id="@+id/tvSeeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/ver_todos"
+        android:textColor="#FF9800"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svSearch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.frontend
+package com.example.tucineapp
 
 import org.junit.Test
 
