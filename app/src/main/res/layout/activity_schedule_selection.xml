@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ibMas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle3"
+        android:layout_width="161dp"
+        android:layout_height="29dp"
+        android:text="@string/text_header"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/btPayment"
+        android:layout_width="359dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#f19f35"
+        android:text="@string/text_button_pay"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="644dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/tvAsientos"
+        android:layout_width="196dp"
+        android:layout_height="29dp"
+        android:text="@string/text_2"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="17dp"
+        android:layout_height="29dp"
+        android:text="@string/number_of_seats"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <Button
+        android:id="@+id/btMenos"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#f19f35"
+        android:text="-"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <Button
+        android:id="@+id/btMas"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#bb5b02"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView2"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/icono"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <TextView
+        android:id="@+id/cinemaNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cinema_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cinemaLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinemaNameTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cinema_location"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/functionSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinemaLocationTextView"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/function_options"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="315dp"
+        android:layout_height="184dp"
+        app:srcCompat="@drawable/image_cinema"
+        app:shapeAppearanceOverlay="@style/radius"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="83dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/functionPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/functionSpinner"
+        android:layout_centerHorizontal="true"
+        android:text="Precio de la Función: S/0.00"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/functionPriceTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Total a Pagar: S/0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <ImageButton
+        android:id="@+id/btBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/back"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="21dp"
+        android:onClick="onClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
